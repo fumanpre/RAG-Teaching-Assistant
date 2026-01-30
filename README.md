@@ -4,7 +4,7 @@ This project is a **Retrieval-Augmented Generation (RAG) based AI Teaching Assis
 
 ---
 
-## Project Structure
+## Project Structure and Run Steps
 
 ```text
 rag_gpt5/
@@ -68,5 +68,3 @@ make ingest
 make embed
 make index
 make run
-
-## 
