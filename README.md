@@ -1,7 +1,12 @@
 # RAG-Teaching-Assistant
-This project is a Retrieval-Augmented Generation (RAG) based AI Teaching Assistant that allows users to ask questions from their own PDF documents. The system ingests PDFs, creates embeddings, builds a FAISS index, and serves an interactive interface using Streamlit.
+
+This project is a **Retrieval-Augmented Generation (RAG) based AI Teaching Assistant** that allows users to ask questions from their own PDF documents. The system ingests PDFs, creates embeddings, builds a FAISS index, and serves an interactive interface using **Streamlit**.
+
+---
 
 ## Project Structure
+
+```text
 rag_gpt5/
 ├── data/
 │   └── pdfs/              # Place your PDF files here
@@ -9,11 +14,13 @@ rag_gpt5/
 │   ├── ingest_pdfs.py
 │   ├── create_embeddings.py
 │   ├── build_faiss.py
+│   ├── create_embeddings.py
 │   ├── query_rag.py
 │   └── app.py
 ├── requirements.txt
 ├── Makefile
 └── README.md
+
 
 
 ## Manual Steps
@@ -49,5 +56,17 @@ python3 build_faiss.py
 
 Once indexing is complete, launch the application:
 streamlit run app.py
+
+
+
+## How to use Makefile
+
+From the project root (rag_gpt5/):
+make venv
+make install
+make ingest
+make embed
+make index
+make run
 
 ## 
